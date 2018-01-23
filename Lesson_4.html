@@ -12,27 +12,27 @@
 // из переданного ей знака. Функция должна проверять корректность введенных чисел и знака операции. 
 // Все аргументы для функции принять от пользователя.
 
-	// var a = prompt('Введите первое число');
-	// var b = prompt('Введите второе число');
-	// var s = prompt('Введите математический знак');
+	var a = prompt('Введите первое число');
+	var b = prompt('Введите второе число');
+	var s = prompt('Введите математический знак');
 
-	// function calculate(operand1, operand2, sign) {
-	// 	if (isNaN(+operand1) == true) {
-	// 		alert('Первый операнд не число');
-	// 		document.write('Ошибка ввода данных');
-	// 	} else if (isNaN(+operand2) == true) {
-	// 		alert('Второй операнд не число');
-	// 		document.write('Ошибка ввода данных');
-	// 	} else if (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') {
-	// 		alert('Вы ввели не математический знак');
-	// 		document.write('Ошибка ввода данных');
-	// 	} else { 
-	// 		res = eval(operand1 + sign + operand2);
-	// 		document.write(a + s + b + '=' + res);
-	// 	}
-	// }
+	function calculate(operand1, operand2, sign) {
+		if (isNaN(+operand1) == true) {
+			alert('Первый операнд не число');
+			document.write('Ошибка ввода данных');
+		} else if (isNaN(+operand2) == true) {
+			alert('Второй операнд не число');
+			document.write('Ошибка ввода данных');
+		} else if (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') {
+			alert('Вы ввели не математический знак');
+			document.write('Ошибка ввода данных');
+		} else { 
+			res = eval(operand1 + sign + operand2);
+			document.write(a + s + b + '=' + res);
+		}
+	}
 
-	// calculate(a, b, s);
+	calculate(a, b, s);
 
 
 //-------------------------------------------------------------------------------------

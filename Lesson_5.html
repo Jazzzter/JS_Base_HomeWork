@@ -12,31 +12,31 @@
 // данная точка. Протестируйте данный объект, изменяя значения его координат, и 
 // повторно вызавая метод GetQuadrant.
 
-	// var Point = new Object();
-	// var result;
+	var Point = new Object();
+	var result;
 
-	// document.write('Координаты точки x и y - случайные числа от -100 до 100 </br></br>');
+	document.write('Координаты точки x и y - случайные числа от -100 до 100 </br></br>');
 
-	// Point.x = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // x - случайное число от -100 до 100
-	// Point.y = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // y - случайное число от -100 до 100
-	// Point.GetQuadrant = function () {
-	// 	if (this.x > 0 && this.y > 0) {
-	// 		result = 'Точка находиться в I квадранте';
-	// 	} else if (this.x < 0 && this.y > 0) {
-	// 		result = 'Точка находиться в II квадранте';
-	// 	} else if (this.x < 0 && this.y < 0) {
-	// 		result = 'Точка находиться в III квадранте';
-	// 	} else if (this.x > 0 && this.y < 0) {
-	// 		result = 'Точка находиться в IV квадранте';
-	// 	} else {
-	// 		result = 'Точка находиться в начале системы координат';
-	// 	}
-	// 	return result;
-	// }
+	Point.x = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // x - случайное число от -100 до 100
+	Point.y = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // y - случайное число от -100 до 100
+	Point.GetQuadrant = function () {
+		if (this.x > 0 && this.y > 0) {
+			result = 'Точка находиться в I квадранте';
+		} else if (this.x < 0 && this.y > 0) {
+			result = 'Точка находиться в II квадранте';
+		} else if (this.x < 0 && this.y < 0) {
+			result = 'Точка находиться в III квадранте';
+		} else if (this.x > 0 && this.y < 0) {
+			result = 'Точка находиться в IV квадранте';
+		} else {
+			result = 'Точка находиться в начале системы координат';
+		}
+		return result;
+	}
 
-	// document.write('Точка с координатами x=' + Point.x + ' y=' + Point.y + '</br>' + Point.GetQuadrant());
+	document.write('Точка с координатами x=' + Point.x + ' y=' + Point.y + '</br>' + Point.GetQuadrant());
 
-	// document.write('</br></br> Для получения других результатов обновите страничку');
+	document.write('</br></br> Для получения других результатов обновите страничку');
 
 
 //-------------------------------------------------------------------------------------

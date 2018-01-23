@@ -18,39 +18,39 @@
 //		Результат должен выводиться в консоль.
 
 
-	// var a = new Array (); // создаем пустой массив
+	var a = new Array (); // создаем пустой массив
 	
-	// for (var i = 0; i < 20; i++) {
-	// 	a[i] = Math.round(Math.random()*100); // заполняем масив 20 случайными целыми числами от 0 до 100
-	// }
+	for (var i = 0; i < 20; i++) {
+		a[i] = Math.round(Math.random()*100); // заполняем масив 20 случайными целыми числами от 0 до 100
+	}
 
-	// // решение без функции
+	// решение без функции
 
-	// 	var max = a[0];
-	// 	var min = a[0];
-	// 	for (var i = 0; i < a.length; i++) {
-	// 		if (a[i] > max) max = a[i];
-	// 		if (a[i] < min) min = a[i];
-	// 	}
+		var max = a[0];
+		var min = a[0];
+		for (var i = 0; i < a.length; i++) {
+			if (a[i] > max) max = a[i];
+			if (a[i] < min) min = a[i];
+		}
 
-	// 	console.log('Массив - ' + a);
-	// 	console.log('Минимальное значение - ' + min + ', максимальное - ' + max);
+		console.log('Массив - ' + a);
+		console.log('Минимальное значение - ' + min + ', максимальное - ' + max);
 
 
-	// // решение c созданием функции
+	// решение c созданием функции
 
-	// 	function getMinAndMax(array) {
-	// 		var max = array[0];
-	// 		var min = array[0];
-	// 		for (var i = 0; i < array.length; i++) {
-	// 			if (array[i] > max) max = array[i];
-	// 			if (array[i] < min) min = array[i];
-	// 		}
-	// 	return console.log('Минимальное значение - ' + min + ', максимальное - ' + max);
-	// 	}
+		function getMinAndMax(array) {
+			var max = array[0];
+			var min = array[0];
+			for (var i = 0; i < array.length; i++) {
+				if (array[i] > max) max = array[i];
+				if (array[i] < min) min = array[i];
+			}
+		return console.log('Минимальное значение - ' + min + ', максимальное - ' + max);
+		}
 
-	// 	console.log('Массив - ' + a);
-	// 	getMinAndMax(a);
+		console.log('Массив - ' + a);
+		getMinAndMax(a);
 
 
 //-------------------------------------------------------------------------------------
