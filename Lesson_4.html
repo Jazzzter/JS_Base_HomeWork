@@ -12,78 +12,78 @@
 // из переданного ей знака. Функция должна проверять корректность введенных чисел и знака операции. 
 // Все аргументы для функции принять от пользователя.
 
-	var a = prompt('Введите первое число');
-	var b = prompt('Введите второе число');
-	var s = prompt('Введите математический знак');
+	// var a = prompt('Введите первое число');
+	// var b = prompt('Введите второе число');
+	// var s = prompt('Введите математический знак');
 
-	function calculate(operand1, operand2, sign) {
-		if (isNaN(+operand1) == true) {
-			alert('Первый операнд не число');
-			document.write('Ошибка ввода данных');
-		} else if (isNaN(+operand2) == true) {
-			alert('Второй операнд не число');
-			document.write('Ошибка ввода данных');
-		} else if (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') {
-			alert('Вы ввели не математический знак');
-			document.write('Ошибка ввода данных');
-		} else { 
-			res = eval(operand1 + sign + operand2);
-			document.write(a + s + b + '=' + res);
-		}
-	}
+	// function calculate(operand1, operand2, sign) {
+	// 	if (isNaN(+operand1) == true) {
+	// 		alert('Первый операнд не число');
+	// 		document.write('Ошибка ввода данных');
+	// 	} else if (isNaN(+operand2) == true) {
+	// 		alert('Второй операнд не число');
+	// 		document.write('Ошибка ввода данных');
+	// 	} else if (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') {
+	// 		alert('Вы ввели не математический знак');
+	// 		document.write('Ошибка ввода данных');
+	// 	} else { 
+	// 		res = eval(operand1 + sign + operand2);
+	// 		document.write(a + s + b + '=' + res);
+	// 	}
+	// }
 
-	calculate(a, b, s);
+	// calculate(a, b, s);
 
 
 //-------------------------------------------------------------------------------------
 
 // 2.Создать функцию, возводящую число в степень, число и сама степень вводится пользователем
 
-	// function numberPower(number, power) {
+	function numberPower(number, power) {
 		
-	// 	var x;
+		var x;
 		
-	// 	if (power < 0) {
-	// 		x = 1 / number;
-	// 		for (var i = 1; i < (-power); i++) {
-	// 			x = (1 / number * x);
-	// 		}
-	// 	} else if (power > 0) {
-	// 		x = number;
-	// 		for (var i = 1; i < power; i++) {
-	// 			x = number * x;
-	// 		}
-	// 	} else x = 1;
+		if (power < 0) {
+			x = 1 / number;
+			for (var i = 1; i < (-power); i++) {
+				x = (1 / number * x);
+			}
+		} else if (power > 0) {
+			x = number;
+			for (var i = 1; i < power; i++) {
+				x = number * x;
+			}
+		} else x = 1;
 
-	// 	return document.write(number + ' в степени ' + power + ' равно ' + x);
-	// }
+		return document.write(number + ' в степени ' + power + ' равно ' + x);
+	}
 
-	// do {
-	// 	do {
-	// 		var a = prompt('Введите число или нажмите "Отмена" для выхода');
-	// 		if (a == '') alert('Вы ничего не ввели. Повторите еще раз или нажмите "Отмена" для выхода');
-	// 		else if (isNaN(+a) == true) alert('Вы ввели не число (NaN). Повторите еще раз или нажмите "Отмена" для выхода');
-	// 		else break;
-	// 	}
-	// 	while ((isNaN(+a) || a == '') == true);
+	do {
+		do {
+			var a = prompt('Введите число или нажмите "Отмена" для выхода');
+			if (a == '') alert('Вы ничего не ввели. Повторите еще раз или нажмите "Отмена" для выхода');
+			else if (isNaN(+a) == true) alert('Вы ввели не число (NaN). Повторите еще раз или нажмите "Отмена" для выхода');
+			else break;
+		}
+		while ((isNaN(+a) || a == '') == true);
 
-	// 	if (a == null) break;
+		if (a == null) break;
 
-	// 	do {
-	// 		var n = prompt('Введите значение степени числа или нажмите "Отмена" для выхода');
-	// 		if (n == '') alert('Вы ничего не ввели. Повторите еще раз или нажмите "Отмена" для выхода');
-	// 		else if (isNaN(+n) == true) alert('Вы ввели не число (NaN). Повторите еще раз или нажмите "Отмена" для выхода');
-	// 	else break;
-	// 	}
-	// 	while (isNaN(+n) || n == '');
+		do {
+			var n = prompt('Введите значение степени числа или нажмите "Отмена" для выхода');
+			if (n == '') alert('Вы ничего не ввели. Повторите еще раз или нажмите "Отмена" для выхода');
+			else if (isNaN(+n) == true) alert('Вы ввели не число (NaN). Повторите еще раз или нажмите "Отмена" для выхода');
+		else break;
+		}
+		while (isNaN(+n) || n == '');
 
-	// 	if (n == null) break;
+		if (n == null) break;
 		
-	// } while (typeof(n) == true && typeof(a) == true);
+	} while (typeof(n) == true && typeof(a) == true);
 
 
-	// if (a == null || n == null) document.write('Выполнение программы прервано');
-	// else numberPower(a, n);
+	if (a == null || n == null) document.write('Выполнение программы прервано');
+	else numberPower(a, n);
 	
 
 //-------------------------------------------------------------------------------------

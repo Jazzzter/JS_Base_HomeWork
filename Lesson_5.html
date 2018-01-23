@@ -12,31 +12,31 @@
 // данная точка. Протестируйте данный объект, изменяя значения его координат, и 
 // повторно вызавая метод GetQuadrant.
 
-	var Point = new Object();
-	var result;
+	// var Point = new Object();
+	// var result;
 
-	document.write('Координаты точки x и y - случайные числа от -100 до 100 </br></br>');
+	// document.write('Координаты точки x и y - случайные числа от -100 до 100 </br></br>');
 
-	Point.x = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // x - случайное число от -100 до 100
-	Point.y = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // y - случайное число от -100 до 100
-	Point.GetQuadrant = function () {
-		if (this.x > 0 && this.y > 0) {
-			result = 'Точка находиться в I квадранте';
-		} else if (this.x < 0 && this.y > 0) {
-			result = 'Точка находиться в II квадранте';
-		} else if (this.x < 0 && this.y < 0) {
-			result = 'Точка находиться в III квадранте';
-		} else if (this.x > 0 && this.y < 0) {
-			result = 'Точка находиться в IV квадранте';
-		} else {
-			result = 'Точка находиться в начале системы координат';
-		}
-		return result;
-	}
+	// Point.x = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // x - случайное число от -100 до 100
+	// Point.y = (Math.round(Math.random()*100) < 50) ? Math.round(Math.random()*100) : -Math.round(Math.random()*100) // y - случайное число от -100 до 100
+	// Point.GetQuadrant = function () {
+	// 	if (this.x > 0 && this.y > 0) {
+	// 		result = 'Точка находиться в I квадранте';
+	// 	} else if (this.x < 0 && this.y > 0) {
+	// 		result = 'Точка находиться в II квадранте';
+	// 	} else if (this.x < 0 && this.y < 0) {
+	// 		result = 'Точка находиться в III квадранте';
+	// 	} else if (this.x > 0 && this.y < 0) {
+	// 		result = 'Точка находиться в IV квадранте';
+	// 	} else {
+	// 		result = 'Точка находиться в начале системы координат';
+	// 	}
+	// 	return result;
+	// }
 
-	document.write('Точка с координатами x=' + Point.x + ' y=' + Point.y + '</br>' + Point.GetQuadrant());
+	// document.write('Точка с координатами x=' + Point.x + ' y=' + Point.y + '</br>' + Point.GetQuadrant());
 
-	document.write('</br></br> Для получения других результатов обновите страничку');
+	// document.write('</br></br> Для получения других результатов обновите страничку');
 
 
 //-------------------------------------------------------------------------------------
@@ -88,42 +88,42 @@
 //    пользователе.
 //    Реализовать заполнение массива пользователем. По окончанию заполнения — вывести информацию о сотрудниках.
 
-	// do {
-	// 	var n = prompt('Введите колличество сотрудников предприятия или нажмите "Отмена" для выхода из программы');
+	do {
+		var n = prompt('Введите колличество сотрудников предприятия или нажмите "Отмена" для выхода из программы');
 		
-	// 	if (n == '') {
-	// 		alert('Вы ничего не ввели. Повторите еще раз');
-	// 	} else if (isNaN(+n) == true) {
-	// 		alert('Вы ввели не число (NaN)');
-	// 	} else {
-	// 		break;
-	// 	}
-	// }
-	// while ((isNaN(+n) || n == '') == true);
+		if (n == '') {
+			alert('Вы ничего не ввели. Повторите еще раз');
+		} else if (isNaN(+n) == true) {
+			alert('Вы ввели не число (NaN)');
+		} else {
+			break;
+		}
+	}
+	while ((isNaN(+n) || n == '') == true);
 
-	// var companyEmployees = [];
+	var companyEmployees = [];
 
-	// for (var i = 0; i < +n; i++) {
-	// 	companyEmployees[i] = {
-	// 		name: prompt('Введите имя ' + (i + 1) + '-го сотрудника'),
-	// 		sName: prompt('Введите фамилию ' + (i + 1) + '-го сотрудника'),
-	// 		age: prompt('Введите возраст ' + (i + 1) + '-го сотрудника'),
-	// 		occupation: prompt('Введите должность ' + (i + 1) + '-го сотрудника'),
-	// 		show: function () {
-	// 			document.write('Имя: ' + this.name + '</br>');
-	// 			document.write('Фамилия: ' + this.sName + '</br>');
-	// 			document.write('Возраст: ' + this.age + '</br>');
-	// 			document.write('Должность: ' + this.occupation + '</br>');
-	// 			return;
-	// 		}
-	// 	}
-	// }
+	for (var i = 0; i < +n; i++) {
+		companyEmployees[i] = {
+			name: prompt('Введите имя ' + (i + 1) + '-го сотрудника'),
+			sName: prompt('Введите фамилию ' + (i + 1) + '-го сотрудника'),
+			age: prompt('Введите возраст ' + (i + 1) + '-го сотрудника'),
+			occupation: prompt('Введите должность ' + (i + 1) + '-го сотрудника'),
+			show: function () {
+				document.write('Имя: ' + this.name + '</br>');
+				document.write('Фамилия: ' + this.sName + '</br>');
+				document.write('Возраст: ' + this.age + '</br>');
+				document.write('Должность: ' + this.occupation + '</br>');
+				return;
+			}
+		}
+	}
 
-	// for (var i = 0; i < +n; i++) {
-	// 	document.write('<b>Сотрудник ' + (i + 1) + ':</b></br>');   
-	// 	companyEmployees[i].show();
-	// 	document.write('</br>');
-	// }
+	for (var i = 0; i < +n; i++) {
+		document.write('<b>Сотрудник ' + (i + 1) + ':</b></br>');   
+		companyEmployees[i].show();
+		document.write('</br>');
+	}
 	
 
 
